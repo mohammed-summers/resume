@@ -1,0 +1,154 @@
+.project-item {
+  width: 40%;
+  height: 80vh;
+  margin: 20px 10px;
+  border: 2px solid #0f52ba;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.project-browser {
+  height: 20px;
+  background: #0f52ba;
+  display: flex;
+  align-items: center;
+}
+
+.project-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background: #fff;
+}
+
+.project-container {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background: red; */
+}
+
+/* delete the backgroundcolor */
+.project-link {
+  height: 60%;
+  /* background-color: black; */
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-item-title {
+  height: 15%;
+  font-weight: 500;
+  font-size: 25px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-item-desc {
+  height: 35%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  /* background: #0f52ba; */
+}
+
+.project-links {
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 15px 0 5px 0; */
+  /* background: pink; */
+}
+
+.link {
+  font-size: 16px;
+  color: #0f52ba;
+
+  background: #fff;
+  border: 1px solid #0f52ba;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 5px 5px;
+}
+.link:hover {
+  background: #0f52ba;
+  color: #fff;
+}
+
+@media (max-height: 1400px) and (min-height: 950px) {
+  /* .project-item-title {
+    background: red;
+  } */
+
+  .project-item {
+    width: 60%;
+    height: 50vh;
+  }
+
+  .link {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .project-item-desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-item {
+    width: 60%;
+    height: 60vh;
+    margin: 20px 0px;
+  }
+
+  .project-link {
+    height: 50%;
+    width: 100%;
+  }
+
+  /* .project-img {
+      height: 110%;
+    } */
+
+  .project-item-title {
+    height: 15%;
+    font-size: 20px;
+  }
+
+  .project-item-desc {
+    height: 20%;
+    font-size: 12px;
+  }
+
+  .project-links {
+    height: 15%;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .project-item {
+    width: 80%;
+    height: 60vh;
+  }
+
+  .project-item-desc {
+    height: 30%;
+    font-size: 11px;
+  }
+}

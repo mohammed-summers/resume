@@ -1,0 +1,163 @@
+.hero {
+  display: flex;
+  height: 88vh;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-right {
+  flex: 1;
+  position: relative;
+}
+
+.hero-left-wrapper {
+  padding: 50px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+.hero-name {
+  font-size: 50px;
+}
+
+.hero-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.hero-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.hero-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0f52ba;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.hero-bg {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #0f52ba;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    position: absolute;
+  }
+  .hero-bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-left {
+    flex: 1;
+  }
+
+  .hero-right {
+    flex: 2;
+  }
+
+  .hero-left-wrapper {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .hero-intro {
+    font-size: 30px;
+  }
+
+  .hero-name {
+    font-size: 30px;
+    padding: 20px 0 30px 0;
+  }
+
+  .hero-title {
+    height: 40px;
+  }
+
+  @keyframes move {
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(-80px);
+    }
+  }
+
+  .hero-title-item {
+    height: 40px;
+  }
+
+  .hero-desc {
+    display: none;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+}
+/* 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-intro,
+  .hero-name {
+    font-size: 23px;
+  }
+
+  .hero-left-wrapper {
+    height: 60%;
+  }
+} */
