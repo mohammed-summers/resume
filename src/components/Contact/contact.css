@@ -66,8 +66,17 @@ i {
   color: #0f52ba;
 }
 
+.contact-desc {
+  font-size: 20px;
+}
+
 form {
   margin-top: 20px;
+}
+
+form p {
+  /* padding: 5px 0; */
+  color: red;
 }
 
 input {
@@ -90,7 +99,7 @@ textarea {
 button {
   border: none;
   padding: 15px;
-  margin-right: 10px;
+  margin: 15px 10px 0 0;
   background: #0f52ba;
   color: #fff;
   font-weight: 500;
