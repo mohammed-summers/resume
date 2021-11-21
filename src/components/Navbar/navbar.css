@@ -19,6 +19,12 @@
   max-width: 1500px;
 }
 
+.fa-code {
+  font-size: 20px;
+  padding-right: 7px;
+  background: #0e48a0;
+}
+
 ul {
   background: inherit;
 }

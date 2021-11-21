@@ -36,34 +36,19 @@
 
 .contact-info-item,
 i {
-  /* background: pink; */
   margin: 18px 0;
   display: flex;
   align-items: center;
 }
 
 .contact-icon {
-  /* background: pink; */
   width: 70px;
-  /* height: 70px; */
+
   margin-right: 20px;
   font-size: 50px;
   color: #0f52ba;
   display: flex;
   justify-content: space-around;
-}
-
-.social {
-  width: 350px;
-  font-size: 40px;
-  display: flex;
-  /* background: pink; */
-  justify-content: space-around;
-}
-
-.social-icon {
-  /* color: black; */
-  color: #0f52ba;
 }
 
 .contact-desc {
@@ -75,7 +60,6 @@ form {
 }
 
 form p {
-  /* padding: 5px 0; */
   color: red;
 }
 
@@ -189,10 +173,6 @@ button {
   .contact-wrapper {
     height: 90%;
   }
-
-  /* input {
-    width: 45%;
-  } */
 }
 
 @media screen and (max-width: 350px) {

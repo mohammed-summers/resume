@@ -93,35 +93,6 @@ const Contact = () => {
               <p>Houston, TX</p>
             </div>
           </div>
-
-          {/* <div className="social">
-            <a
-              href="https://github.com/mohammed-summers"
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-
-            <a
-              href="https://github.com/mohammed-summers"
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-
-            <a
-              href="https://github.com/mohammed-summers"
-              target="_blank"
-              rel="noreferrer"
-              className="social-icon"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div> */}
         </div>
 
         <div className="contact-right">

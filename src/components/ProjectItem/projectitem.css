@@ -27,13 +27,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* background: red; */
 }
 
-/* delete the backgroundcolor */
 .project-link {
   height: 60%;
-  /* background-color: black; */
 }
 
 .project-img {
@@ -57,8 +54,6 @@
   margin: 0;
   display: flex;
   align-items: center;
-
-  /* background: #0f52ba; */
 }
 
 .project-links {
@@ -66,8 +61,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* padding: 15px 0 5px 0; */
-  /* background: pink; */
 }
 
 .link {
@@ -86,10 +79,6 @@
 }
 
 @media (max-height: 1400px) and (min-height: 950px) {
-  /* .project-item-title {
-    background: red;
-  } */
-
   .project-item {
     width: 60%;
     height: 50vh;
@@ -117,10 +106,6 @@
     height: 50%;
     width: 100%;
   }
-
-  /* .project-img {
-      height: 110%;
-    } */
 
   .project-item-title {
     height: 15%;
