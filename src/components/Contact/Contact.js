@@ -30,7 +30,7 @@ const Contact = () => {
     formHandler.current.reset();
   };
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       {/* <div className="contact-bg"></div> */}
       <div className="contact-wrapper">
         <div className="contact-left">

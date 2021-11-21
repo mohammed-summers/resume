@@ -5,7 +5,7 @@ import me from "../../img/mk4.jpeg";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="hero-left">
         <div className="hero-left-wrapper">
           <h2 className="hero-intro">Hello, My name is</h2>

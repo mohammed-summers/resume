@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
+import { Link } from "react-scroll";
+// import { HashLink as Link } from "react-router-hash-link";
+// import { Link } from "react-router-dom";
 
 import "./navbar.css";
 
@@ -10,8 +13,15 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+        <div className="navbar-container ">
+          <Link
+            className="nav-links"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             MK
           </Link>
 
@@ -21,16 +31,26 @@ const Navbar = () => {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links">
+              <Link
+                className="nav-links"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
               <Link
-                to="/about"
                 className="nav-links"
-                // onClick={closeMobileMenu}
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
               >
                 About
               </Link>
@@ -38,9 +58,12 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                to="/projects"
                 className="nav-links"
-                // onClick={closeMobileMenu}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
               >
                 Projects
               </Link>
@@ -48,9 +71,12 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                to="/contact"
                 className="nav-links"
-                // onClick={closeMobileMenu}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
                 Contact
               </Link>

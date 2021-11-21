@@ -6,7 +6,7 @@ import React from "react";
 
 const ProjectList = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="project-text">
         <h1 className="project-title">Projects</h1>
         <p className="project-desc">
