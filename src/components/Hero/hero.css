@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  height: 88vh;
+  height: 80vh;
 }
 
 .hero-left {
@@ -150,14 +150,9 @@
     position: absolute;
   }
 }
-/* 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .hero-intro,
-  .hero-name {
-    font-size: 23px;
-  }
 
-  .hero-left-wrapper {
-    height: 60%;
+@media screen and (max-width: 376px) {
+  .hero-name {
+    font-size: 25px;
   }
-} */
+}

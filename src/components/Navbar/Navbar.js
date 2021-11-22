@@ -17,10 +17,10 @@ const Navbar = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-160}
             duration={500}
           >
-            <i class="fas fa-code"></i> Portfolio
+            <i className="fas fa-code"></i> Portfolio
           </Link>
           <div className="menu-icon" onClick={clickHandler}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -32,7 +32,7 @@ const Navbar = () => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-160}
                 duration={500}
               >
                 Home
@@ -45,7 +45,7 @@ const Navbar = () => {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-140}
                 duration={500}
               >
                 About
@@ -58,7 +58,7 @@ const Navbar = () => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-80}
+                offset={-140}
                 duration={500}
               >
                 Projects

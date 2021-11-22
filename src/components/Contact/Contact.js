@@ -52,22 +52,22 @@ const Contact = () => {
     if (!formIsValid) {
       return;
     }
-    // emailjs
-    //   .sendForm(
-    //     "service_8nbyulq",
-    //     "template_qjrmw3q",
-    //     formHandler.current,
-    //     "user_VmRQbigCtQtSFsl0slWwM"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       setSubmitted(true);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_8nbyulq",
+        "template_qjrmw3q",
+        formHandler.current,
+        "user_VmRQbigCtQtSFsl0slWwM"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     formHandler.current.reset();
   };
@@ -100,44 +100,38 @@ const Contact = () => {
             Submit the form below so I can get back to you as soon as possible
           </h2>
           <form ref={formHandler} onSubmit={submitHanlder}>
-            <div>
-              <input
-                type="text"
-                placeholder="Name"
-                name="user_name"
-                ref={nameInputRef}
-              />
-              {!formInputValidity.name && <p>Please enter a valid name</p>}
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Subject"
-                name="user_subject"
-                ref={subjectInputRef}
-              />
-              {!formInputValidity.subject && (
-                <p>Please enter a valid subject</p>
-              )}
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Email"
-                name="user_email"
-                ref={emailInputRef}
-              />
-              {!formInputValidity.email && <p>Please enter a valid email</p>}
-            </div>
-            <div>
-              <textarea
-                rows="5"
-                placeholder="Message"
-                name="message"
-                ref={messageInputRef}
-              />
-              {!formInputValidity.message && <p>Please leave a message</p>}
-            </div>
+            <input
+              type="text"
+              placeholder="Name"
+              name="user_name"
+              ref={nameInputRef}
+            />
+            {!formInputValidity.name && <p>Please enter a valid name</p>}
+
+            <input
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+              ref={subjectInputRef}
+            />
+            {!formInputValidity.subject && <p>Please enter a valid subject</p>}
+
+            <input
+              type="text"
+              placeholder="Email"
+              name="user_email"
+              ref={emailInputRef}
+            />
+            {!formInputValidity.email && <p>Please enter a valid email</p>}
+
+            <textarea
+              rows="5"
+              placeholder="Message"
+              name="message"
+              ref={messageInputRef}
+            />
+            {!formInputValidity.message && <p>Please leave a message</p>}
+
             <button>Submit</button>
             {submitted && "Thank You!"}
           </form>

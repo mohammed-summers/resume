@@ -1,6 +1,6 @@
 .navbar {
   background: #0e48a0;
-  height: 12vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +141,7 @@ ul {
   }
 
   .menu-icon {
+    background: #0e48a0;
     display: block;
     position: absolute;
     top: 0;

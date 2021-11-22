@@ -1,5 +1,5 @@
 .contact {
-  height: 88vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -43,9 +43,8 @@ i {
 
 .contact-icon {
   width: 70px;
-
   margin-right: 20px;
-  font-size: 50px;
+  font-size: 40px;
   color: #0f52ba;
   display: flex;
   justify-content: space-around;
@@ -67,7 +66,7 @@ input {
   width: 100%;
   height: 50px;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fff;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
@@ -78,6 +77,7 @@ textarea {
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  border: 1px solid #fff;
 }
 
 button {
@@ -101,10 +101,6 @@ button {
     flex-direction: column;
     padding: 0px 50px;
     height: 90%;
-  }
-
-  .contact-right {
-    height: 100%;
   }
 
   .contact-info {
@@ -137,24 +133,25 @@ button {
   form {
     margin-top: 0px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-
+  /* 
   input {
     width: 45%;
     height: 40px;
     margin: 10px;
     margin-left: 0;
-  }
+  } */
 
-  button {
+  /* button {
     margin-top: 10px;
-  }
+  } */
 }
 
 @media screen and (max-width: 576px) {
   .contact-title {
     font-size: 30px;
+    padding: 10px 0;
   }
 
   .contact-icon {
@@ -166,6 +163,10 @@ button {
     padding-top: 0;
   }
 
+  .contact-info-item {
+    margin: 0 0;
+  }
+
   .contact-info-item p {
     font-size: 12px;
   }
@@ -173,27 +174,38 @@ button {
   .contact-wrapper {
     height: 90%;
   }
-}
-
-@media screen and (max-width: 350px) {
-  .contact-title {
-    font-size: 22px;
+  form {
+    margin-top: 0px;
+    display: block;
+    flex-wrap: wrap;
   }
 
-  .contact-icon {
-    font-size: 20px;
-    margin-right: 0;
+  @media screen and (max-width: 377px) {
+    .contact-title {
+      font-size: 22px;
+    }
+
+    .contact-icon {
+      font-size: 20px;
+      margin-right: 0;
+    }
+
+    .contact-info-item p {
+      font-size: 9.5px;
+    }
+
+    .contact-icon {
+      justify-content: flex-start;
+    }
+    input {
+      width: 45%;
+      height: 35px;
+      margin: 10px;
+      margin-left: 0;
+    }
   }
 
-  .contact-info-item p {
-    font-size: 9.5px;
-  }
-
-  .contact-icon {
-    justify-content: flex-start;
-  }
-
-  input {
-    width: 45%;
+  textarea {
+    height: 60px;
   }
 }

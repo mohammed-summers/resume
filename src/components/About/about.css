@@ -1,5 +1,5 @@
 .about {
-  height: 88vh;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -137,6 +137,10 @@
     padding: 20px;
   }
 
+  .skills-p {
+    padding-bottom: 10px;
+  }
+
   .skills .icons {
     padding: 0 40px;
   }
@@ -153,8 +157,16 @@
     padding: 1px 0;
   }
 
+  .about-sub {
+    margin: 0px;
+  }
+
+  .skills-p {
+    padding-bottom: 0;
+  }
+
   .icons i {
-    font-size: 30px;
+    font-size: 20px;
   }
   .about-right-container {
     padding-right: 0px;
