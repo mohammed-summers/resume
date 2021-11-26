@@ -8,12 +8,14 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
 
   const clickHandler = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container ">
           <Link
             className="nav-links"
+            onClick={closeMobileMenu}
             to="home"
             spy={true}
             smooth={true}
@@ -28,7 +30,8 @@ const Navbar = () => {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                className="nav-links"
+                className="nav-links nav-links-mobile"
+                onClick={closeMobileMenu}
                 to="home"
                 spy={true}
                 smooth={true}
@@ -41,11 +44,12 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                className="nav-links"
+                className="nav-links nav-links-mobile"
+                onClick={closeMobileMenu}
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-140}
+                offset={-60}
                 duration={500}
               >
                 About
@@ -54,11 +58,12 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                className="nav-links"
+                className="nav-links nav-links-mobile"
+                onClick={closeMobileMenu}
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-140}
+                offset={-60}
                 duration={500}
               >
                 Projects
@@ -67,7 +72,8 @@ const Navbar = () => {
 
             <li className="nav-item">
               <Link
-                className="nav-links"
+                className="nav-links nav-links-mobile"
+                onClick={closeMobileMenu}
                 to="contact"
                 spy={true}
                 smooth={true}

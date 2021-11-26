@@ -23,20 +23,4 @@ export const products = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natu perspiciatis voluptatibus impedit, numquam labore, illo praesentium sint ipsa ad, velit recusandae. Hic temporibus, blanditiis quis reiciendis praesentium nisi quia.",
     code: "https://github.com/mohammed-summers/github-user-finder",
   },
-  {
-    id: 4,
-    img: "https://i.ibb.co/VLkSW2V/Screenshot-232.png",
-    title: "Github User Finder",
-    ink: "https://ms-github-user-finder.netlify.app",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natu perspiciatis voluptatibus impedit, numquam labore, illo praesentium sint ipsa ad, velit recusandae. Hic temporibus, blanditiis quis reiciendis praesentium nisi quia.",
-    code: "https://github.com/mohammed-summers/github-user-finder",
-  },
-  {
-    id: 5,
-    img: "https://i.ibb.co/VLkSW2V/Screenshot-232.png",
-    title: "Github User Finder",
-    ink: "https://ms-github-user-finder.netlify.app",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae natu perspiciatis voluptatibus impedit, numquam labore, illo praesentium sint ipsa ad, velit recusandae. Hic temporibus, blanditiis quis reiciendis praesentium nisi quia.",
-    code: "https://github.com/mohammed-summers/github-user-finder",
-  },
 ];

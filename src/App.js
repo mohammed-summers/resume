@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import ProjectList from "./components/ProjectList/ProjectList";
 import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
+import Navbar2 from "./components/Navbar2";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </Router> */}
-
+      {/* <Navbar2 /> */}
       <Navbar />
       <Hero />
       <About />
